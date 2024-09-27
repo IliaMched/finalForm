@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	
+	<script>
+function validateForm() {
+  let x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	 <form name="myForm" action="#" onSubmit="return validateForm()" method="post">
+
+	 <h1>REGISTRATION FORM</h1>
+	<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" placeholder="Ilia Mchedlishvili" ><br><br>
+ 
+	<label for="user">Username:</label>
+<input type="text" id="user" name="user" placeholder="xXiliaDarkAngelXx" required><br><br>
+		 
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="example@yahoo.com" required><br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+
+<fieldset>
+    <legend>Gender:</legend>
+    <label><input type="radio" name="gender" value="male" required> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="other"> Other</label>
+</fieldset><br>
+		 
+		<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob"><br><br>
+
+<label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label><br><br> 
+	<div class="buttoncontainer">
+		 
+		 <button type="submit" >Register</button>
+		 <button type="reset" >Reset</button>
+		 
+		</div>
+		 <p>
+	This is not a real form. It is purely for learning and education purposes. Please be carefull with what information you enter as it may be used against you.
+	</p>
+</form>
+	
+	
+	
+	
+	
+</body>
+</html>
